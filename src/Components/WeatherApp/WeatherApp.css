@@ -1,95 +1,106 @@
-.error-message {
-    margin-top: 10px;
-    color: #ff4c4c; /* Red color to indicate an error */
-    background-color: #ffe6e6; /* Light red background for visibility */
+/* WeatherApp.module.css */
+.error_message {
+    margin-top: 20px;
+    color: #ff4c4c; /* Enhance visibility of error message */
+    background-color: #fff0f0; /* Softer red background */
     border: 1px solid #ff4c4c;
-    border-radius: 5px;
-    padding: 10px;
+    border-radius: 10px;
+    padding: 15px;
     text-align: center;
-    font-size: 14px;
+    font-size: 16px;
     font-weight: bold;
-    width: 96.6%;
+    width: 90%; /* Adjusted for better responsiveness */
+    align-self: center; /* Center align the error message */
   }
-
-
-.container {
-    background-color: #ffc16f;
-    width: 607px;
-    height: 829px;
-    margin: auto;
-    margin-top: 75px;
-    background-image: linear-gradient(180deg, #130754 0%, #3b2f80 100%);
-    border-radius: 50px;
-}
-.top-bar{
+  
+  .container {
     display: flex;
+    flex-direction: column;
+    align-items: center; /* Ensure all items are centered in this container */
     justify-content: center;
-    gap: 14px;
-    padding-top: 60px;
-}
-.top-bar input{
+    height: 100vh; /* Full viewport height */
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f0f0f0;
+    background-image: linear-gradient(135deg, #6b82a8 10%, #a6b9cd 100%); /* Soothing blue gradient */
+    border-radius: 30px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2); /* Soft shadow for depth */
+  }
+  
+  .top_bar {
     display: flex;
-    width: 362 px;
-    height: 78px;
-    background: #ebfffc;
-    border: none;
+    justify-content: space-between;
+    width: 100%; /* Full width of the container */
+    max-width: 600px; /* Maximum width */
+    margin: 20px 0;
+  }
+  
+  .top_bar_input {
+    flex: 1; /* Take available space */
+    height: 50px;
+    background: #ffffff;
+    border: 1px solid #ccc; /* Subtle border */
+    border-radius: 25px;
+    padding: 0 20px;
+    color: #333;
+    font-size: 18px;
     outline: none;
-    border-radius: 40px;
-    padding-left: 40px;
-    color: #626262;
-    font-size: 20px;
-    font-weight: 400;
-}
-.search-icon {
+  }
+  
+  .search_icon {
+    width: 50px;
+    height: 50px;
+    margin-left: 10px;
+    background: #ffffff;
+    border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 78px;
-    height: 78px;
-    background: #ebfffc;
-    border-radius: 40px;
     cursor: pointer;
-}
-
-.weather-image{
-    margin-top: 29px;
+  }
+  
+  .weather_image {
+    margin: 20px 0;
+  }
+  
+  .weather_temp {
+    font-size: 100px; /* Slightly smaller for better fit */
+    color: #ffffff;
+    font-weight: 300; /* Lighter font weight */
+  }
+  
+  .weather_location {
+    font-size: 48px; /* Adjusted for better visual hierarchy */
+    color: #ffffff;
+    font-weight: 300;
+  }
+  
+  .data_container {
+    width: 100%;
+    max-width: 600px;
     display: flex;
-    justify-content: center;
-}
-.weather-temp{
+    justify-content: space-around; /* Space out data elements evenly */
+  }
+  
+  .element {
     display: flex;
-    justify-content:center;
-    color: white;
-    font-size: 120px;
-    font-weight: 400;
-}
-.weather-location{
-    display: flex;
-    justify-content: center;
-    font-size: 60px;
-    color: white;
-    font-weight: 400;
-}
-.data-container{
-    margin-top: 50px;
-    color: white;
-    display: flex;
-    justify-content: center;
-}
-.element{
-    margin: auto;
-    display: flex;
-    align-items: flex-start;
-    gap: 12px;
-}
-.data{
-    font-size: 34px;
-    font-weight: 400;
-}
-.text{
-    font-size:20px;
-    font-weight: 400;
-}
-.icon{
-    margin-top: 10px;
-}
+    flex-direction: column;
+    align-items: center; /* Center align items vertically */
+    gap: 8px;
+  }
+  
+  .data {
+    font-size: 32px;
+    color: #ffffff;
+  }
+  
+  .text {
+    font-size: 18px;
+    color: #dddddd; /* Lighter for less emphasis */
+  }
+  
+  .icon {
+    width: 36px; /* Fixed size for consistency */
+    height: 36px;
+  }
+  
